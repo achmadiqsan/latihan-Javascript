@@ -15,7 +15,6 @@
 	</select>
 	<br><br>
 	<p></p>
-</body>
 	
 	<script type="text/javascript">
 		const select = document.querySelector('select');
@@ -39,4 +38,5 @@
 			}
 		}
 	</script>
+</body>
 </html>
