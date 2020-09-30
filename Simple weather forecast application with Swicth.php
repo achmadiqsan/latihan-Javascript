@@ -15,7 +15,8 @@
 	</select>
 	<br><br>
 	<p></p>
-
+</body>
+	
 	<script type="text/javascript">
 		const select = document.querySelector('select');
 		const para = document.querySelector('p');
@@ -38,5 +39,4 @@
 			}
 		}
 	</script>
-</body>
 </html>
