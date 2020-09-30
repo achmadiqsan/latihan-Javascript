@@ -2,20 +2,6 @@
 <html>
 <head>
 	<title>Latihan JavaScript</title>
-</head>
-<body>
-	<!-- weather forecast application to use a switch statement instead: --> 
-	<label for="weather">select the weather type today:</label>
-	<select id="weather">
-		<option value="">--Make a choice--</option>
-		<option value="sunny">Sunny</option>
-		<option value="rainy">Rainy</option>
-		<option value="showing">Snowing</option>
-		<option value="overcast">Overcast</option>
-	</select>
-	<br><br>
-	<p></p>
-	
 	<script type="text/javascript">
 		const select = document.querySelector('select');
 		const para = document.querySelector('p');
@@ -38,5 +24,20 @@
 			}
 		}
 	</script>
+</head>
+<body>
+	<!-- weather forecast application to use a switch statement instead: --> 
+	<label for="weather">select the weather type today:</label>
+	<select id="weather">
+		<option value="">--Make a choice--</option>
+		<option value="sunny">Sunny</option>
+		<option value="rainy">Rainy</option>
+		<option value="showing">Snowing</option>
+		<option value="overcast">Overcast</option>
+	</select>
+	<br><br>
+	<p></p>
+	
+	
 </body>
 </html>
