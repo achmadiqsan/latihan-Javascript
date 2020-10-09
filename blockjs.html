@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Source Code JavaScript</title>
+  </head>
+  <body>
+      <div class="">
+          belajar
+      </div>
+
+      <script type="text/javascript">
+          {
+            document.title = "Hello Javascript" ;
+            var d = document.getElementsByTagName('div')[0];
+            d.innerHTML = "Semangat Belajar JavaScript";
+            var p = document.createElement('p');
+            p.innerHTML = "bersama wahana komputer sekarang";
+            var h1 = document.createElement('h1');
+            h1.innerHTML = "Hello JavaScript";
+            document.body.insertBefore(h1,d);
+            document.body.appendChild(p);
+          }
+      </script>
+  </body>
+</html>
