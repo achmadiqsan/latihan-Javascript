@@ -1,0 +1,238 @@
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    
+    <div class="output">Hello</div>
+    <button>Click Me</button>
+    
+    <div>another div</div>
+    
+    <script>
+        // variabel dan Data Types :
+        
+        /*
+        
+        console.log('hello');
+        const player = 'Laurance svekis';
+        const player2 = 'laurance\'s svekis'
+        console.log(player);
+        console.log(player2);
+        let score = 0;
+        score = 100;
+        score = 100 + 1;
+        console.log(score);
+        
+        console.log(typeof score);
+        
+        let TEST = "String 1";
+        let test = 'String 2';
+        console.log(TEST);
+        console.log(test);
+        
+        score = "Tes Words";
+        score = 1 + score + "More Srings";
+        console.log(score);
+        
+        console.log(typeof score);
+        
+        */
+        
+        // Array and Object :
+        
+        /*
+        
+        const dice = [1,2,3,4,5,6];
+        console.log(dice);
+        console.log(dice[3]);
+        let addLast = dice.push(7);
+        console.log(addLast);
+        let removeLast = dice.pop();
+        console.log(removeLast);
+        console.log(dice);
+        let removeFirst = dice.shift();
+        let addFirst = dice.unshift(0);
+        console.log(dice);
+        
+        const myObj = {
+            'user' : 'near',
+            'score' : 100,
+            'dice' : dice
+        };
+        console.log(myObj);
+        
+        */
+        
+        // fuction :
+        
+        /*
+        
+        const val = 100;
+        console.log(test1(4));
+        function test1(num){
+            console.log('function declaration ' + num);
+            let response = num * 25;
+            console.log(val);
+            return response;
+        }
+        test1(5);
+        test1(3);
+        
+        const test2 = function(num){
+            console.log('function expression ' + num);
+        }
+        test2(2);
+        
+        */
+        
+        // condition :
+        
+        /*
+        
+        let boo = true;
+        let bool = false;
+        
+        if(bool){
+            console.log('it was true');
+        } else {
+            console.log('it was false');
+        }
+        
+        if(5 > 3){
+            console.log('it was true');
+        } else {
+            console.log('it was false');
+        }
+        
+        if(5 < 3){
+            console.log('it was true');
+        } else {
+            console.log('it was false');
+        }
+        
+        let message = (5 == 5) ? 'TRUE' : 'FALSE';
+        console.log(message);
+        
+        let message1 = (5 < 3) ? 'TRUE' : 'FALSE';
+        console.log(message1);
+        
+        let message2 = (true) ? 'TRUE' : 'FALSE';
+        console.log(message2);
+        
+        */
+        
+        /*
+        
+        function rollDice(num1,num2){
+            let res;
+            if (num1 > num2){
+                res = "Number 1 is Wins";
+            } else if (num1 == num2) {
+                res = "Tie Game";
+            } else {
+                res = "Number 2 Wins";
+            }
+            return res;
+        }
+        
+        */
+        
+        // javaScript Math Object :
+        
+        /*
+        
+        let a = Math.floor(Math.random()*10)+1;
+        let b = Math.floor(Math.random()*10)+1;
+        
+        console.log(a);
+        console.log(b);
+        
+        */
+        
+        /*
+        
+        let a = randomNum(5);
+        let b = randomNum(6);
+        let message = rollDice(a,b);
+        
+        function randomNum(val){
+            return Math.floor(Math.random()*val)+1;
+        }
+        
+      //  console.log(a);
+      //  console.log(b);
+      //  console.log(a + ' vs ' + b + ' ' + message);
+        
+        */
+        
+        // loop for and while :
+        
+        /*
+        
+        const dice = ['2','3','4','5','6'];
+        const dice1 = ['Test2',3,'4','5','6'];
+        let count = 10;
+        let x = 0;
+        while (x < count) {
+            //console.log('Count Is ' + x);
+            x++;
+        }
+        
+        for (let x = 0; x < 10;x++){
+            console.log(rollDice(randomNum(10),randomNum(10)));
+        }
+        
+        dice1.forEach(function(el,index,arr){
+            /*
+            console.log(el);
+            console.log(index);
+            //console.log(dice1[index]);
+            console.log(arr[index]);
+            console.log(arr);
+            */
+        
+        /* 
+        
+        })
+        
+        function rollDice(num1,num2){
+            let res;
+            if (num1 > num2){
+                res = "Number 1 is Wins";
+            } else if (num1 == num2) {
+                res = "Tie Game";
+            } else {
+                res = "Number 2 Wins";
+            }
+            return res;
+        }
+        
+        let a = randomNum(5);
+        let b = randomNum(6);
+        let message = rollDice(a,b);
+        
+        function randomNum(val){
+            return Math.floor(Math.random()*val)+1;
+        }
+        
+        */
+        
+        // JavaScript DOM interaction :
+        
+        const output = document.querySelector('.output');
+        console.dir(output);
+        output.textContent = "Wold";
+        output.style.backgroundColor = 'red';
+        const divs = document.querySelectorAll('div');
+        const btn = document.querySelector('button');
+        btn.addEventListener('click',function(e){
+           console.log('hello'); 
+            console.log(e);
+        })
+    </script>
+</body>
+    
+</html>
